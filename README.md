@@ -1,0 +1,1 @@
+The task is to deploy three services i.e, simple web servers, snmp daemon, Haproxy stats. For this we need 5 web servers which are created at Cleura cloud network and they are named as devA, devB, devC, HAproxy, bastionET2598.
