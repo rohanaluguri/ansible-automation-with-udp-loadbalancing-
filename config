@@ -1,37 +1,40 @@
 Host bastionET2598
   User ubuntu
-  HostName 185.52.156.253
-  IdentityFile ~/.ssh/id_rsa
+  HostName 103.57.72.62
+  IdentityFile ./privatekey
   UserKnownHostsFile=~/dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
 
 Host HAproxy
   User ubuntu
-  HostName 185.52.156.4
-  IdentityFile ~/.ssh/id_rsa
+  HostName 103.57.72.2
+  IdentityFile ./privatekey
   UserKnownHostsFile=~/dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
 
 Host devA
   User ubuntu
-  HostName 10.6.0.26
+  HostName 10.1.0.76
+  IdentityFile ./privatekey
   ProxyJump bastionET2598
   StrictHostKeyChecking no
   PasswordAuthentication no
 
 Host devB
   User ubuntu
-  HostName 10.6.0.104       
+  HostName 10.1.0.73
+  IdentityFile ./privatekey       
   ProxyJump bastionET2598
   StrictHostKeyChecking no
   PasswordAuthentication no
 
 Host devC
   User ubuntu
-  HostName 10.6.0.100
+  HostName 10.1.0.101
   ProxyJump bastionET2598
+  IdentityFile ./privatekey
   StrictHostKeyChecking no
   PasswordAuthentication no
   

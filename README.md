@@ -1,1 +1,1 @@
-The task is to deploy three services i.e, simple web servers, snmp daemon, HAproxystats. For this we need 5 web servers which are created at Cleura cloud network and they are named as devA, devB, devC, HAproxy, bastionET2598.
+The task is to deploy three web servers i.e, simple web servers using flask. For this we need 5 web servers which are created at Cleura cloud network and they are named as devA, devB, devC, HAproxy, bastionET2598.Haproxy is used to loadbalance the backend webservers. The web servers can be seen using http://iphaprxoy/
